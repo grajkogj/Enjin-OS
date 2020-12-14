@@ -1,0 +1,94 @@
+.circle {
+        display: inline-block;
+        border-radius: 50%;
+}
+.transparentContainer {
+        min-width: 10px;
+        min-height: 10px;
+        border-radius: 7px;
+        padding: 5px;
+        display: grid;
+        place-items: center;
+        background: rgba(100, 100, 100, 0.5)
+}
+.solidContainer {
+        min-width: 10px;
+        min-height: 10px;
+        border-radius: 7px;
+        padding: 5px;
+        display: grid;
+        place-items: center;
+        background: rgb(100, 100, 100)
+}
+.header-menu-button {
+        font: Arial, Helvetica, sans-serif;
+        border-radius: 7px;
+        border: solid;
+        border-width: 3px;
+        border-color: rgb(0, 195, 255);
+        outline: none;
+        background: rgb(200, 200, 200);
+        transition: border-width 0.1s linear, color 0.2s linear;
+        color: rgb(100, 100, 100);
+        font-size: 105%;
+        font-weight: bold;
+}
+.header-menu-button:hover {
+        color: rgb(0, 0, 0);
+        background: rgb(200, 200, 200);
+        border-width: 5px;
+        cursor: pointer;
+}
+.header-tab-button {
+        font: Arial, Helvetica, sans-serif;
+        border-radius: 7px;
+        border: solid;
+        border-width: 3px;
+        border-color: rgb(75, 75, 75);
+        outline: none;
+        background: rgb(200, 200, 200, 0.5);
+        transition: background 0.2s linear, color 0.2s linear, border-bottom-width 0.1s ease;
+        color: rgb(100, 100, 100);
+        font-size: 105%;
+        font-weight: bold;
+}
+.header-tab-button:hover {
+        color: rgb(0, 0, 0);
+        background: rgba(200, 200, 200, 0.75);
+        cursor: pointer;
+        border-bottom-width: 7px;
+}
+.tab-display-frame {
+        border: none;
+        outline: none;
+        width: calc(100% - 10px);
+        height: 100%;
+}
+.customLink {
+        height: 61px;
+        width: 61px;
+        padding: 5px;
+        color: rgb(100,100,100);
+        border: solid;
+        border-width: 2px;
+        border-color: rgb(100,100,100);
+        border-radius: 5px;
+        background-color: rgba(168, 168, 168, 0.616);
+        font-family: Arial, Helvetica, sans-serif;
+        transition: height, width, 0.5s ease;
+}
+.customLink:hover {
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+}
+[container] {
+        padding: 5px;
+        display: grid;
+}
+[round-icon] {
+        display: inline-block;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+}
