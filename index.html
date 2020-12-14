@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+                <title>
+                        Enjin OS
+                </title>
+                <link rel="stylesheet" href="css/index.css">
+                <link rel="stylesheet" href="css/classes.css">
+                <link rel="stylesheet" href="css/animations.css">
+                <script src="js/main.js"></script>
+                <script src="js/localStorageManager.js"></script>
+        </head>
+
+        <body>
+
+                <div id="loading-page">
+                        <div id="loading-page-content-container">
+                        <img src="img/enjin.png" alt="loading" title="Loading" id="loading-page-icon">
+                        <br>
+                        <h2 id="loading-page-title">
+                                Welcome to Enjin OS
+                        </h2>
+                        <br>
+                        <h3 id="loading-page-loading">
+                                Loading
+                        </h3>
+                        </div>
+                </div>
+
+                <div container id="header">
+                        <div id="header-menu-container" class="solidContainer" container>
+                                <div id="header-logo-shell">
+                                        <img id="header-logo" src="img/enjin.png" alt="Enjin Header Logo">
+                                </div>
+                                <div id="header-time-shell">
+                                        <h3 id="header-time">
+                                                This is the time
+                                        </h3>
+                                </div>
+                        </div>
+
+                        <div id="header-tab-container" class="transparentContainer" container>
+                                <div id="tab-container-shell">
+                                        <input onclick="changeActiveTab('home')" class="header-tab-button" type="button" id="header-home-tab" value="Home">
+                                        <input onclick="changeActiveTab('shortcuts')" class="header-tab-button" type="button" id="header-shortcuts-tab" value="Shortcuts">
+                                        <input onclick="changeActiveTab('notes')" class="header-tab-button" type="button" id="header-notes-tab" value="Notes">
+                                        <input onclick="changeActiveTab('utilities')" class="header-tab-button" type="button" id="header-utilities-tab" value="Utilities">
+                                </div>
+                                <div id="active-tab-indicator-shell">
+                                        <div id="active-tab-indicator"></div>
+                                </div>
+                        </div>
+                </div>
+
+                <div id="main" container>
+
+
+
+                        <div container id="main-container">
+                                <div glide="2" id="home-display-shell">
+                                        <iframe src="home.html" class="tab-display-frame"></iframe>
+                                </div>
+                                <div glide="2" id="shortcuts-display-shell">
+                                        <iframe src="shortcuts.html" class="tab-display-frame"></iframe>
+                                </div>
+                                <div glide="2" id="notes-display-shell">
+                                        <iframe src="notes.html" class="tab-display-frame"></iframe>
+                                </div>
+                                <div glide="2" id="utilities-display-shell">
+                                        <iframe src="utilities.html" class="tab-display-frame"></iframe>
+                                </div>
+                        </div>
+
+
+
+                </div>
+
+        </body>
+
+</html>
